@@ -22,11 +22,9 @@ public class TopicOverviewActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topic_overview);
 
+        //Retrieve chosen topic name
         Intent launchedMe = getIntent();
-
         chosenTopicName = launchedMe.getStringExtra("chosenTopic");
-        TextView topic = (TextView) findViewById(R.id.topic);
-        topic.setText(chosenTopicName);
 
         //Create all Topics and Question objects for each.
         String[] PokemonQ1Choices = {"Electric", "Psychic", "Water", "Fire"};
@@ -77,17 +75,20 @@ public class TopicOverviewActivity extends ActionBarActivity {
         String[] MarvelSuperHeroesQ5Choices = {"rainbow", "blue", "orange", "pink"};
         Question MarvelSuperHeroesQ5 = new Question("What is the color of Beast's fur?", MarvelSuperHeroesQ5Choices, 1);
         Question[] MarvelSuperHeroesQuestions = {MarvelSuperHeroesQ1, MarvelSuperHeroesQ2, MarvelSuperHeroesQ3, MarvelSuperHeroesQ4, MarvelSuperHeroesQ5};
-        Topic MarvelSuperHeroes = new Topic("MarvelSuperHeroes", "POW POOOOOWWWWWWW", MarvelSuperHeroesQuestions, 5);
+        Topic MarvelSuperHeroes = new Topic("Marvel Super Heroes", "POW POOOOOWWWWWWW", MarvelSuperHeroesQuestions, 5);
 
         AllTopics = new Topic[]{Pokemon, Math, Physics, MarvelSuperHeroes};
 
         //Display chosen topic overview
+        TextView topic = (TextView) findViewById(R.id.topic);
         TextView desc = (TextView) findViewById(R.id.desc);
         TextView totalQ = (TextView) findViewById(R.id.totalQ);
         for (int i = 0; i < AllTopics.length; i++) {
             if (AllTopics[i].getName().equals(chosenTopicName)) {
+                topic.setText(AllTopics[i].getName());
                 desc.setText("Topic Description: " + AllTopics[i].getDescription());
                 totalQ.setText("Total Number of Questions: " + AllTopics[i].getTotalQ());
+
             }
         }
 
