@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-e44a9d55d1fc8db245e4571f705065a161d8b5ed.jar" />
-    </item>
-    <item
         jar="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -21,6 +14,13 @@
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/pre-dexed/debug/classes-c35405f45e0a8571a72285ac5e2cf36a7f195a78.jar" />
+    </item>
+    <item
+        jar="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/midori/SkyDrive/COLLEGE WORK/2014-2015/WINTER 2015/INFO 498 Android/norimori.quizdroidv3/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-e44a9d55d1fc8db245e4571f705065a161d8b5ed.jar" />
     </item>
     <item
         jar="/Users/midori/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
